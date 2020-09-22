@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a id="highscores" class="navbar-link" href="highscores.html">Highscores</a>
+            <span id="score" class="navbar-nav">Score : 0</span>
+            <span id="timer" class="navbar-nav">Timer : 0</span>            
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div id="start-screen" class="card">
+                <div class="card-header">
+                    <h5>Welcome to the coding quiz!</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">This is a timed quiz, when you click start the timer will start and you will be
+                        presented with the first question. Good luck!
+                    </p>
+                    <button type="button" id="start-button" class="btn btn-primary">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div id="question-card" class="card" hidden>
+                <div class="card-header">
+                    <h3 id="question"></h3>
+                </div>
+                <div class="card-body">
+                    <div id="options">
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="end-screen" class="card" hidden>
+                <div class="card-header">
+                    <h2 id="final-score">You scored: 0</h2>
+                </div>
+                <div class="card-body">
+                    <h5>Submit your Initials</h5>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="user-initials" placeholder="Initials Here">
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="assets\js\questions.js"></script>
+    <script src="assets\js\logic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</body>
+
+</html>
